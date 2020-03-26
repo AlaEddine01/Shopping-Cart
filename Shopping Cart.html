@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Shopping Cart.css">
+</head>
+<body>
+    <header>
+        <div class="left-head">
+            <h1>Shopping Cart</h1>
+            <ul class="left-list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="right-head">
+            <ul>
+                <li class="menu">Account
+                    <ul class="sub-menu">
+                        <li class="items">Profile</li>
+                        <li class="items">Setting</li>
+                        <li class="items">Logout</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="caroussel">
+            <img class="img-caroussel" src="https://lh3.googleusercontent.com/-JWrFg2TXGnw/XnsxJqndRgI/AAAAAAAACOI/8HEMOwKoVD8K50olruMmPxvwStCRyVBcwCK8BGAsYHg/s0/shopping.jpg" alt="">
+        </section>
+        <section class="articles">
+            <div class="container-articles">
+                <div class="cart">
+                    <svg id="icon-cart" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-2x"><path fill="white" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+                    <p class="cart-title">Shopping Bag Total : <span id="total">0</span>$</p>
+                </div>
+                <div class="cart-container">
+                    <div class="sub-container">
+                        <div>
+                            <svg class="cross taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 423" class="svg-inline--fa fa-times fa-w-11 fa-2x"><path fill="red" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg>
+                             <svg class="heart taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-2x"><path fill="" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                        </div>
+                        <img class="img-article" src="https://el-gato-loco.com/image/cache/data/homme%20chaussures/chaussures-homme-casual-confortable-oxford-urbain-fashion-600x600.jpg" alt="">
+                        <p class="item-description">Sbedri<br><span class="item-color">Oxford</span></p>
+                        <div style="display: flex; align-items: center;">
+                            <svg class="plus taille" style="margin-right: 15px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-plus fa-w-14 fa-2x"><path fill="#2ba447" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" class=""></path></svg>
+                            <p class="quantity" style="margin-right: 15px;">0</p>
+                            <svg class="minus taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="minus-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-minus-square fa-w-14 fa-2x"><path fill="red" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM92 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H92z" class=""></path></svg>
+                        </div>
+                        <p class="price"><span class="prix">120</span>$</p>
+                    </div>
+    
+                    <div class="sub-container">
+                        <div>
+                            <svg class="cross taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 423" class="svg-inline--fa fa-times fa-w-11 fa-2x"><path fill="red" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg>
+                             <svg class="heart taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-2x"><path fill="" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                        </div>
+                        <img class="img-article" src="https://cdn.shopify.com/s/files/1/1631/8771/products/WNC491-PRP_Tacos_Purple_7fb26b1f-da5b-4a1a-a900-99fb2e8d6365.jpg?v=1557503045" alt="">
+                        <p class="item-description">Klasset<br><span class="item-color">Tacos</span></p>
+                        <div style="display: flex; align-items: center;">
+                            <svg class="plus taille" style="margin-right: 15px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-plus fa-w-14 fa-2x"><path fill="#2ba447" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" class=""></path></svg>
+                            <p class="quantity" style="margin-right: 15px;">0</p>
+                            <svg class="minus taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="minus-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-minus-square fa-w-14 fa-2x"><path fill="red" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM92 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H92z" class=""></path></svg>
+                        </div>
+                        <p class="price"><span class="prix">20</span>$</p>
+                    </div>
+    
+                    <div class="sub-container">
+                        <div>
+                            <svg class="cross taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 423" class="svg-inline--fa fa-times fa-w-11 fa-2x"><path fill="red" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg>
+                             <svg class="heart taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-2x"><path fill="" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                        </div>
+                        <img class="img-article" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9ybDYlk14o1Q20jXPax3qvTEfK1Cn7AejCzFOKAyP8mQdAqMG" alt="">
+                        <p class="item-description">Kartaba<br><span class="item-color">Pokémon</span></p>
+                        <div style="display: flex; align-items: center;">
+                            <svg class="plus taille" style="margin-right: 15px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-plus fa-w-14 fa-2x"><path fill="#2ba447" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" class=""></path></svg>
+                            <p class="quantity" style="margin-right: 15px;">0</p>
+                            <svg class="minus taille" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="minus-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-minus-square fa-w-14 fa-2x"><path fill="red" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM92 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H92z" class=""></path></svg>
+                        </div>
+                        <p class="price"><span class="prix">80</span>$</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Shopping Cart.js"></script>
+</body>
+</html>
